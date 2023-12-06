@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:fitsSystemWindows="true"
+	tools:context=".MainActivity"
+	android:padding="8dp">
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:id="@+id/middlesliderContainer"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<TextView
+			android:id="@+id/textValueRed"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="0%"
+			android:textSize="40dp"
+			android:textColor="#f00"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+
+		<com.google.android.material.slider.Slider
+			android:id="@+id/sliderRed"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingVertical="12dp"
+			android:valueFrom="0"
+			android:valueTo="255"
+			app:trackHeight="10dp"
+			app:thumbRadius="12dp"
+			app:labelBehavior="gone"
+			app:trackColorActive="#f00"
+			app:thumbColor="#f00"
+			app:thumbStrokeColor="#f00"
+			android:value="50"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@id/textValueRed"/>
+
+		<TextView
+			android:id="@+id/textValueGreen"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="0%"
+			android:textSize="40dp"
+			android:textColor="#0f0"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@id/sliderRed" />
+
+		<com.google.android.material.slider.Slider
+			android:id="@+id/sliderGreen"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingVertical="12dp"
+			android:valueFrom="0"
+			android:valueTo="255"
+			app:trackHeight="10dp"
+			app:thumbRadius="12dp"
+			app:labelBehavior="gone"
+			app:trackColorActive="#0f0"
+			app:thumbColor="#0f0"
+			app:thumbStrokeColor="#0f0"
+			android:value="50"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@id/textValueGreen" />
+
+		<TextView
+			android:id="@+id/textValueBlue"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="0%"
+			android:textSize="40dp"
+			android:textColor="#58f"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/sliderGreen" />
+
+		<com.google.android.material.slider.Slider
+			android:id="@+id/sliderBlue"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingVertical="12dp"
+			android:valueFrom="0"
+			android:valueTo="255"
+			app:trackHeight="10dp"
+			app:thumbRadius="12dp"
+			app:labelBehavior="gone"
+			app:trackColorActive="#58f"
+			app:thumbColor="#58f"
+			app:thumbStrokeColor="#58f"
+			android:value="50"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@id/textValueBlue" />
+
+	</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
